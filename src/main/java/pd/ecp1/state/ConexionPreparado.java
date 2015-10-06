@@ -1,10 +1,10 @@
 package pd.ecp1.state;
 
-public class Preparado extends Estado{
+public class ConexionPreparado extends ConexionEstado{
 
 	@Override
 	public void parar(Conexion conexion) {
-		conexion.setEstado(new Parado());
+		conexion.setEstado(new ConexionParado());
 	}
 
 	@Override
@@ -15,7 +15,7 @@ public class Preparado extends Estado{
 
 	@Override
 	public void cerrar(Conexion conexion) {
-		conexion.setEstado(new Cerrado());
+		conexion.setEstado(new ConexionCerrado());
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class Preparado extends Estado{
 	@Override
 	public void enviar(Conexion conexion, String msg) {
 		conexion.getLink().enviar(msg);
-		conexion.setEstado(new Esperando());
+		conexion.setEstado(new ConexionEsperando());
 	}
 
 

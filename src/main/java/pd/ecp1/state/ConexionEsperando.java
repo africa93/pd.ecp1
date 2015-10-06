@@ -1,6 +1,6 @@
 package pd.ecp1.state;
 
-public class Esperando extends Estado {
+public class ConexionEsperando extends ConexionEstado {
 
 	@Override
 	public void parar(Conexion conexion) {}
@@ -18,9 +18,9 @@ public class Esperando extends Estado {
 	public void recibir(Conexion conexion, int respuesta) {
 		conexion.getLink().recibir(respuesta);
 		if(respuesta==0){
-			conexion.setEstado(new Preparado());
+			conexion.setEstado(new ConexionPreparado());
 		}else{
-			conexion.setEstado(new Cerrado());
+			conexion.setEstado(new ConexionCerrado());
 		}
 	}
 

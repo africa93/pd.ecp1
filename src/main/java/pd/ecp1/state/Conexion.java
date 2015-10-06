@@ -1,21 +1,21 @@
 package pd.ecp1.state;
 
 public class Conexion {
-    private Estado estado;
+    private ConexionEstado estado;
 
     private Link link;
 
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
-        this.estado = new Cerrado();
+        this.estado = new ConexionCerrado();
     }
 
     public Link getLink() {
         return link;
     }
 
-    public Estado getEstado() {
+    public ConexionEstado getEstado() {
         return this.estado;
     }
 
@@ -43,7 +43,7 @@ public class Conexion {
         estado.recibir(this, respuesta);
     }
     
-    public void setEstado(Estado estado){
+    public void setEstado(ConexionEstado estado){
     	this.estado = estado;
     }
 

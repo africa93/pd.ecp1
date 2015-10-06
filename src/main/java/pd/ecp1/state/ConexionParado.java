@@ -1,13 +1,13 @@
 package pd.ecp1.state;
 
-public class Parado extends Estado {
+public class ConexionParado extends ConexionEstado {
 
 	@Override
 	public void parar(Conexion conexion) {}
 
 	@Override
 	public void iniciar(Conexion conexion) {
-		conexion.setEstado(new Preparado());
+		conexion.setEstado(new ConexionPreparado());
 	}
 
 	@Override
