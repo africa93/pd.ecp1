@@ -8,7 +8,7 @@ public class Conexion {
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
-        this.estado = Estado.CERRADO;
+        this.estado = new Cerrado();
     }
 
     public Link getLink() {
@@ -96,6 +96,10 @@ public class Conexion {
             }
         }
         assert false : "estado imposible";
+    }
+    
+    public void setEstado(Estado estado){
+    	this.estado = estado;
     }
 
 }
