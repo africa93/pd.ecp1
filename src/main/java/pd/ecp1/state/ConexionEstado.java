@@ -1,14 +1,31 @@
 package pd.ecp1.state;
 
 public abstract class ConexionEstado {
-    public abstract void parar(Conexion conexion);
-    public abstract void iniciar(Conexion conexion);
-    public abstract void abrir(Conexion conexion);
-    public abstract void cerrar(Conexion conexion);
-    public abstract void recibir(Conexion conexion, int respuesta);
-    public abstract void enviar(Conexion conexion, String msg);
+	
+	private Estado estado;
+	public ConexionEstado(Estado estado){
+		this.estado = estado;
+	}
+	
+    public void parar(Conexion conexion){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
+    public void iniciar(Conexion conexion){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
+    public void abrir(Conexion conexion){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
+    public void cerrar(Conexion conexion){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
+    public void recibir(Conexion conexion, int respuesta){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
+    public void enviar(Conexion conexion, String msg){
+    	throw new UnsupportedOperationException("Acción no permitida... ");
+    }
 	public Estado getEstado() {
-		// TODO Auto-generated method stub
-		return null;
+		return estado;
 	}
 }

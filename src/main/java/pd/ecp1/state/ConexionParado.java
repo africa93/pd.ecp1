@@ -2,24 +2,16 @@ package pd.ecp1.state;
 
 public class ConexionParado extends ConexionEstado {
 
-	@Override
-	public void parar(Conexion conexion) {}
-
+	public ConexionParado(Estado estado) {
+		super(estado);
+	}
 	@Override
 	public void iniciar(Conexion conexion) {
-		conexion.setEstado(new ConexionPreparado());
+		conexion.setEstado(new ConexionPreparado(Estado.PREPARADO));
 	}
-
 	@Override
-	public void abrir(Conexion conexion) {}
-
-	@Override
-	public void cerrar(Conexion conexion) {}
-
-	@Override
-	public void enviar(Conexion conexion, String msg) {}
-
-	@Override
-	public void recibir(Conexion conexion, int respuesta) {}
+	public void parar(Conexion conexion) {
+		conexion.setEstado(new ConexionPreparado(Estado.PARADO));
+	}
 
 }

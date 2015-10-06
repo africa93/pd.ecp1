@@ -8,7 +8,7 @@ public class Conexion {
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
-        this.estado = new ConexionCerrado();
+        this.estado = new ConexionCerrado(Estado.CERRADO);
     }
 
     public Link getLink() {
