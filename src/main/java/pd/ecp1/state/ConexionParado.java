@@ -11,7 +11,7 @@ public class ConexionParado extends ConexionEstado {
 	}
 	@Override
 	public void parar(Conexion conexion) {
-		conexion.setEstado(new ConexionPreparado());
+		conexion.setEstado(new ConexionParado());
 	}
 
 }

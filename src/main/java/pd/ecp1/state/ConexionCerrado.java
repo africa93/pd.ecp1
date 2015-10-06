@@ -14,7 +14,7 @@ public class ConexionCerrado extends ConexionEstado {
 	
 	@Override
 	public void cerrar(Conexion conexion) {
-		conexion.setEstado(new ConexionPreparado());
+		conexion.setEstado(new ConexionCerrado());
 	}
 	
 }
