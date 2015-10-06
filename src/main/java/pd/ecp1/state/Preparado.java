@@ -19,7 +19,7 @@ public class Preparado extends Estado{
 	}
 
 	@Override
-	public void recibir(Conexion conexion) {}
+	public void recibir(Conexion conexion, int respuesta) {}
 
 	@Override
 	public void enviar(Conexion conexion, String msg) {

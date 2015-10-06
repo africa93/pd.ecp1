@@ -17,9 +17,9 @@ public class Cerrado extends Estado {
 	public void cerrar(Conexion conexion) {}
 
 	@Override
-	public void recibir(Conexion conexion) {}
+	public void recibir(Conexion conexion, int respuesta) {}
 
 	@Override
-	public void enviar(Conexion conexion) {}
+	public void enviar(Conexion conexion, String msg) {}
 	
 }
