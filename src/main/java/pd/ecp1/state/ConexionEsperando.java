@@ -9,9 +9,9 @@ public class ConexionEsperando extends ConexionEstado {
 	@Override
 	public void recibir(Conexion conexion, int respuesta) {
 		conexion.getLink().recibir(respuesta);
-		if(respuesta==0){
+		if (respuesta == 0) {
 			conexion.setEstado(new ConexionPreparado());
-		}else{
+		} else {
 			conexion.setEstado(new ConexionCerrado());
 		}
 	}
