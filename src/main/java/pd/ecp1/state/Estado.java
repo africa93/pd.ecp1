@@ -1,5 +1,10 @@
 package pd.ecp1.state;
 
-public enum Estado {
-    CERRADO, PARADO, PREPARADO, ESPERANDO;
+public abstract class Estado {
+    public abstract void parar(Conexion conexion);
+    public abstract void iniciar(Conexion conexion);
+    public abstract void abrir(Conexion conexion);
+    public abstract void cerrar(Conexion conexion);
+    public abstract void recibir(Conexion conexion);
+    public abstract void enviar(Conexion conexion);
 }
