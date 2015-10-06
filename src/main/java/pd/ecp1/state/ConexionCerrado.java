@@ -3,18 +3,18 @@ package pd.ecp1.state;
 public class ConexionCerrado extends ConexionEstado {
 
 	
-	public ConexionCerrado(Estado estado) {
-		super(estado);
+	public ConexionCerrado() {
+		super(Estado.CERRADO);
 	}
 
 	@Override
 	public void abrir(Conexion conexion) {
-		conexion.setEstado(new ConexionPreparado(Estado.PREPARADO));
+		conexion.setEstado(new ConexionPreparado());
 	}
 	
 	@Override
 	public void cerrar(Conexion conexion) {
-		conexion.setEstado(new ConexionPreparado(Estado.CERRADO));
+		conexion.setEstado(new ConexionPreparado());
 	}
 	
 }
