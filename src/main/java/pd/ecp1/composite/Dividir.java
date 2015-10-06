@@ -12,7 +12,7 @@ public class Dividir extends Operador {
 	}
 	@Override
 	public String toString() {
-		return getExpresiones().get(0).toString()+"/"+getExpresiones().get(1).toString();
+		return "("+getExpresiones().get(0).toString()+"/"+getExpresiones().get(1).toString()+")";
 	}
 
 }
