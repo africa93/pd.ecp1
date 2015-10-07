@@ -19,7 +19,7 @@ public class VisitArea extends Visitor {
 
 	@Override
 	public void visitCircle(Circle circle) {
-		area += (Math.PI*(circle.getRatio()*circle.getRatio()));
+		area += (3.14*(circle.getRatio()*circle.getRatio()));
 	}
 
 	public double getArea(){
