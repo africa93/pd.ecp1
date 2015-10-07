@@ -6,4 +6,5 @@ public abstract class Componente {
 
 	public abstract void add(Componente pf);
 
+	public abstract boolean esCompuesto();
 }

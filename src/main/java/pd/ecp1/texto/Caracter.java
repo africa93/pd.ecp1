@@ -11,10 +11,19 @@ public class Caracter extends Componente{
 	}
 	@Override
 	public String dibujar(Boolean mayusculas) {
-		return Character.toString(Character.toUpperCase(c));
+		if(mayusculas){
+			return Character.toString(Character.toUpperCase(c));
+		}
+		return Character.toString(c);
 	}
 	@Override
 	public void add(Componente pf) {}
+	
+	
+	@Override
+	public boolean esCompuesto() {
+		return false;
+	}
 	
 	
 }

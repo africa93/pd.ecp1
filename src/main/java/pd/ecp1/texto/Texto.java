@@ -16,4 +16,9 @@ public class Texto extends CompositeText{
 		
 	}
 
+	@Override
+	public boolean esCompuesto() {
+		return true;
+	}
+
 }

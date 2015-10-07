@@ -1,22 +1,41 @@
 package pd.ecp1.texto;
 
+import java.util.ArrayList;
+
 public class Parrafo extends CompositeText {
-	String parrafo;
+	private ArrayList<Caracter> caracteres;
 	
 	public Parrafo(){
-		
+		caracteres = new ArrayList<Caracter>();
 	}
 
 	@Override
 	public String dibujar(Boolean mayusculas) {
 		if(mayusculas){
-			return parrafo.toUpperCase();
+			return dibujaParrafo().toUpperCase()+"\n";
 		}
-		return parrafo;
+		return dibujaParrafo()+"\n";
 	}
 
 	@Override
 	public void add(Componente pf) {
-		throw new UnsupportedOperationException();
+		if(!pf.esCompuesto()){
+			caracteres.add((Caracter) pf);
+		}else{
+			throw new UnsupportedOperationException();
+		}
+	}
+
+	@Override
+	public boolean esCompuesto() {
+		return true;
+	}
+	
+	private String dibujaParrafo(){
+		String parrafo ="";
+		for(int i=0; i<caracteres.size(); i++){
+			parrafo+=caracteres.get(i);
+		}
+		return parrafo;
 	}
 }
