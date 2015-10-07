@@ -13,4 +13,5 @@ public abstract class Operador extends Expresion {
 	protected ArrayList<Expresion> getExpresiones(){
 		return expresiones;
 	}
+	
 }
