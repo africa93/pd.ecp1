@@ -1,8 +1,8 @@
 package pd.ecp1.calculadoraMemento;
 
 public interface Mementable<T> {
-    T createMemento();
+	T createMemento();
 
-    void restoreMemento(T memento);
+	void restoreMemento(T memento);
 
 }

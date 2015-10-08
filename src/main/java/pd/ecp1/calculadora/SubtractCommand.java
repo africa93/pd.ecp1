@@ -3,7 +3,7 @@ package pd.ecp1.calculadora;
 import upm.jbb.IO;
 
 public class SubtractCommand extends Operation {
-	
+
 	public SubtractCommand(Calculator calculator) {
 		super(calculator);
 	}

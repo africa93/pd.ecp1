@@ -1,6 +1,6 @@
 package pd.ecp1.factoryMethod;
 
-public class NaturalNumberEs extends NaturalNumber{
+public class NaturalNumberEs extends NaturalNumber {
 
 	private static final String[] textValue = { "cero", "uno", "dos", "tres", "cuatro", "cinco" };
 
@@ -8,7 +8,5 @@ public class NaturalNumberEs extends NaturalNumber{
 		super(value);
 		this.setTextValue(textValue);
 	}
-
-
 
 }

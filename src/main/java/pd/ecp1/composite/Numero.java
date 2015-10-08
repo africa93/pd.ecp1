@@ -2,8 +2,8 @@ package pd.ecp1.composite;
 
 public class Numero extends Expresion {
 	private int cifra;
-	
-	public Numero(int cifra){
+
+	public Numero(int cifra) {
 		this.cifra = cifra;
 	}
 
@@ -14,7 +14,7 @@ public class Numero extends Expresion {
 
 	@Override
 	public String toString() {
-		return Integer.toString(cifra) ;
+		return Integer.toString(cifra);
 	}
-	
+
 }

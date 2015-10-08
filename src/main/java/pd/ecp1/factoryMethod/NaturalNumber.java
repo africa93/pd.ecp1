@@ -11,21 +11,21 @@ public abstract class NaturalNumber {
 	public int getValue() {
 		return value;
 	}
-	
+
 	public void setValue(int value) {
 		assert value >= 0;
 		this.value = value;
 	}
-	
-	public String getTextValue(){
+
+	public String getTextValue() {
 		if (this.value < textValue.length) {
 			return textValue[this.value];
 		} else {
 			return "???";
 		}
 	}
-	
-	protected void setTextValue(String[] textValue){
+
+	protected void setTextValue(String[] textValue) {
 		this.textValue = textValue;
 	}
 }

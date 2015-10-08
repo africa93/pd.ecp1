@@ -1,9 +1,10 @@
 package pd.ecp1.texto;
 
 public class Parrafo extends CompositeText {
-	public Parrafo(){
-		
+	public Parrafo() {
+
 	}
+
 	@Override
 	protected String dibujarFinal() {
 		return "\n";
@@ -11,9 +12,9 @@ public class Parrafo extends CompositeText {
 
 	@Override
 	public void add(Componente pf) {
-		if(!pf.esCompuesto()){
+		if (!pf.esCompuesto()) {
 			componentes.add(pf);
-		}else{
+		} else {
 			throw new UnsupportedOperationException();
 		}
 	}

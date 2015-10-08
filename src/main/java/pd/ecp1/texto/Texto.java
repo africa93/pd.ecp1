@@ -1,7 +1,7 @@
 package pd.ecp1.texto;
 
-public class Texto extends CompositeText{
-	
+public class Texto extends CompositeText {
+
 	@Override
 	public String dibujarFinal() {
 		return "\n ---o---";
@@ -9,9 +9,9 @@ public class Texto extends CompositeText{
 
 	@Override
 	public void add(Componente pf) {
-		if(pf.esCompuesto()){
+		if (pf.esCompuesto()) {
 			componentes.add(pf);
-		}else{
+		} else {
 			throw new UnsupportedOperationException();
 		}
 	}

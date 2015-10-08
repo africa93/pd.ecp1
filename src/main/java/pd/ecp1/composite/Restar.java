@@ -1,6 +1,6 @@
 package pd.ecp1.composite;
 
-public class Restar extends Operador{
+public class Restar extends Operador {
 
 	public Restar(Expresion expresion1, Expresion expresion2) {
 		super(expresion1, expresion2);
@@ -8,12 +8,12 @@ public class Restar extends Operador{
 
 	@Override
 	public int operar() {
-		return getExpresiones().get(0).operar()-getExpresiones().get(1).operar();
+		return getExpresiones().get(0).operar() - getExpresiones().get(1).operar();
 	}
 
 	@Override
 	public String toString() {
-		return "("+getExpresiones().get(0).toString()+"-"+getExpresiones().get(1).toString()+")";
+		return "(" + getExpresiones().get(0).toString() + "-" + getExpresiones().get(1).toString() + ")";
 	}
 
 }

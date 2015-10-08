@@ -10,13 +10,13 @@ public class Gps extends Extra {
 	public void view() {
 		System.out.println("GPS ");
 	}
-	
-	public double getPrecio(){
-		return getPrecio()+componenteVehiculo.getPrecio();
+
+	public double getPrecio() {
+		return getPrecio() + componenteVehiculo.getPrecio();
 	}
-	
-	public String getDescripcion(){
-		return componenteVehiculo.getDescripcion()+descripcion;
+
+	public String getDescripcion() {
+		return componenteVehiculo.getDescripcion() + descripcion;
 	}
-	
+
 }

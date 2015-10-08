@@ -2,10 +2,10 @@ package pd.ecp1.calculadoraMemento;
 
 import upm.jbb.IO;
 
-public class SaveCommand extends Operation{
-	
+public class SaveCommand extends Operation {
+
 	private GestorMementos<MementoCalculadora> gestorMementos;
-	
+
 	public SaveCommand(CalculatorMementable calculator, GestorMementos<MementoCalculadora> gestorMementos) {
 		super(calculator);
 		this.gestorMementos = gestorMementos;
