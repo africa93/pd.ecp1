@@ -1,9 +1,13 @@
 package pd.ecp1.calculadoraMemento;
 
-public class UndoCommand extends Operation {
+import upm.jbb.IO;
 
-	public UndoCommand(CalculatorMementable calculator) {
+public class UndoCommand extends Operation {
+	
+	private GestorMementos<MementoCalculadora> gestorMementos;
+	public UndoCommand(CalculatorMementable calculator, GestorMementos<MementoCalculadora> gestorMementos) {
 		super(calculator);
+		this.gestorMementos = gestorMementos;
 	}
 
 	@Override
@@ -13,6 +17,7 @@ public class UndoCommand extends Operation {
 
 	@Override
 	public void execute() {
-		calculator.undo();
+		String key = (String) IO.getIO().select(gestorMementos.keys());
+		calculator.restoreMemento(gestorMementos.getMemento(key));
 	}
 }

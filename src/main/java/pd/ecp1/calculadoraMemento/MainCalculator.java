@@ -7,11 +7,15 @@ public class MainCalculator {
 
     public MainCalculator() {
         CalculatorMementable calculator = new CalculatorMementable();
+        GestorMementos<MementoCalculadora> gestorMementos = new GestorMementos<>();
         this.commandManager = new CommandManager();
         this.commandManager.add(new AddCommand(calculator));
         this.commandManager.add(new SubtractCommand(calculator));
         this.commandManager.add(new ResetCommand(calculator));
         this.commandManager.add(new PrintCommand(calculator));
+        this.commandManager.add(new SaveCommand(calculator, gestorMementos));
+        this.commandManager.add(new UndoCommand(calculator, gestorMementos));
+        
     }
 
     public void execute() {
