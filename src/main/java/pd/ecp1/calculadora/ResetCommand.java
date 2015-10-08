@@ -1,6 +1,6 @@
 package pd.ecp1.calculadora;
 
-public class ResetCommand extends Comand {
+public class ResetCommand extends Operation {
 
 	public ResetCommand(Calculator calculator) {
 		super(calculator);

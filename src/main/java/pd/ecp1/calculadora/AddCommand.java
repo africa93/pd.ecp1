@@ -2,7 +2,7 @@ package pd.ecp1.calculadora;
 
 import upm.jbb.IO;
 
-public class AddCommand extends Comand {
+public class AddCommand extends Operation {
 	
 	public AddCommand(Calculator calculator) {
 		super(calculator);
