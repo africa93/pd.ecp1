@@ -2,8 +2,8 @@ package pd.ecp1.calculadoraMemento;
 
 public interface Comando {
 
-	String name();
+    String name();
 
-	void execute();
+    void execute();
 
 }
