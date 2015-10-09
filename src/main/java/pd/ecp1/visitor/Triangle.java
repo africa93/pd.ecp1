@@ -1,26 +1,27 @@
 package pd.ecp1.visitor;
 
 public class Triangle extends Figure {
-	private double base;
-	private double height;
+    private double base;
 
-	public Triangle(String description, double base, double height) {
-		super(description);
-		this.base = base;
-		this.height = height;
-	}
+    private double height;
 
-	public double getBase() {
-		return base;
-	}
+    public Triangle(String description, double base, double height) {
+        super(description);
+        this.base = base;
+        this.height = height;
+    }
 
-	public double getHeight() {
-		return height;
-	}
+    public double getBase() {
+        return base;
+    }
 
-	@Override
-	public void accept(Visitor v) {
-		v.visitTriangle(this);
-	}
+    public double getHeight() {
+        return height;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitTriangle(this);
+    }
 
 }

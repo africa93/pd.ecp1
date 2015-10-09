@@ -63,7 +63,7 @@ public class ConexionTest {
             ignored.toString();
         }
     }
-    
+
     @Test
     public void testCerradoNoSoportadoRecibir() {
         try {
@@ -120,7 +120,7 @@ public class ConexionTest {
             ignored.toString();
         }
     }
-    
+
     @Test
     public void testParadoNoSoportadoAbrir() {
         this.conexion.abrir();
@@ -172,7 +172,7 @@ public class ConexionTest {
             ignored.toString();
         }
     }
-    
+
     @Test
     public void testParadoNoSoportadoRecibir() {
         this.conexion.abrir();
@@ -184,9 +184,9 @@ public class ConexionTest {
             ignored.toString();
         }
     }
-    
+
     @Test
-    public void testEsperandoNoSoportadoAbrir(){
+    public void testEsperandoNoSoportadoAbrir() {
         this.conexion.abrir();
         this.conexion.enviar("");
         try {
@@ -194,11 +194,11 @@ public class ConexionTest {
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
-        }        
+        }
     }
-    
+
     @Test
-    public void testEsperandoNoSoportadoCerrar(){
+    public void testEsperandoNoSoportadoCerrar() {
         this.conexion.abrir();
         this.conexion.enviar("");
         try {
@@ -206,11 +206,11 @@ public class ConexionTest {
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
-        }        
+        }
     }
-    
+
     @Test
-    public void testEsperandoNoSoportadoParar(){
+    public void testEsperandoNoSoportadoParar() {
         this.conexion.abrir();
         this.conexion.enviar("");
         try {
@@ -218,11 +218,11 @@ public class ConexionTest {
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
-        }        
+        }
     }
-    
+
     @Test
-    public void testEsperandoNoSoportadoIniciar(){
+    public void testEsperandoNoSoportadoIniciar() {
         this.conexion.abrir();
         this.conexion.enviar("");
         try {
@@ -230,11 +230,11 @@ public class ConexionTest {
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
-        }        
+        }
     }
-    
+
     @Test
-    public void testEsperandoNoSoportadoEnviar(){
+    public void testEsperandoNoSoportadoEnviar() {
         this.conexion.abrir();
         this.conexion.enviar("");
         try {
@@ -242,9 +242,9 @@ public class ConexionTest {
             fail();
         } catch (UnsupportedOperationException ignored) {
             ignored.toString();
-        }        
+        }
     }
-    
+
     @Test
     public void testEsperandoRecibirACK() {
         this.conexion.abrir();
@@ -260,6 +260,5 @@ public class ConexionTest {
         this.conexion.recibir(1);
         assertEquals(Estado.CERRADO, this.conexion.getEstado());
     }
-
 
 }

@@ -72,14 +72,14 @@ public class TextoTest {
 
     @Test
     public void testTextoNormal() {
-        assertEquals("Hola\nHola\n---o---\n",txt.dibujar(false));
+        assertEquals("Hola\nHola\n---o---\n", txt.dibujar(false));
     }
-    
+
     @Test
     public void testTextoMayusculas() {
-        assertEquals("HOLA\nHOLA\n---o---\n",txt.dibujar(true));
+        assertEquals("HOLA\nHOLA\n---o---\n", txt.dibujar(true));
     }
-    
+
     @Test
     public void testTextoNoAddCaracter() {
         try {

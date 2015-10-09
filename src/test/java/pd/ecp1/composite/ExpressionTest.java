@@ -15,8 +15,7 @@ public class ExpressionTest {
         this.exp3 = new Restar(this.exp1, new Numero(3));
         this.exp4 = new Multiplicar(this.exp1, new Numero(2));
         this.exp5 = new Dividir(this.exp1, new Numero(3));
-        this.exp6 = new Sumar(new Restar(new Numero(3), new Multiplicar(
-                new Dividir(this.exp1, new Numero(2)), new Numero(3))), this.exp1); // ((3-((4/2)*3))+4)
+        this.exp6 = new Sumar(new Restar(new Numero(3), new Multiplicar(new Dividir(this.exp1, new Numero(2)), new Numero(3))), this.exp1); // ((3-((4/2)*3))+4)
     }
 
     @Test
