@@ -8,7 +8,11 @@ public class NaturalNumberTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+	    NaturalNumberManager nnm = new NaturalNumberManager();
+	    System.out.println(nnm.getNaturalNumber().getTextValue());
+	    nnm.setCreator(new NaturalNumberFrCreator());
+	    System.out.println(nnm.getNaturalNumber().getTextValue());
+		
 	}
 
 }

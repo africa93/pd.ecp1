@@ -1,18 +1,23 @@
 package pd.ecp1.factoryMethod;
 
 public class NaturalNumberManager {
-	private NaturalNumber naturalNumber;
-	private NaturalNumberCreator creator;
+    private NaturalNumber naturalNumber;
 
-	public void createFigure(int value) {
-		this.naturalNumber = this.creator.createNaturalNumber(value);
-	}
+    private NaturalNumberCreator creator;
+    
+    public NaturalNumberManager(){
+        naturalNumber = new NaturalNumberEs(0);
+    }
 
-	public void setCreator(NaturalNumberCreator creator) {
-		this.creator = creator;
-	}
+    public void createFigure(int value) {
+        this.naturalNumber = this.creator.createNaturalNumber(value);
+    }
 
-	public NaturalNumber getNaturalNumber() {
-		return naturalNumber;
-	}
+    public void setCreator(NaturalNumberCreator creator) {
+        this.creator = creator;
+    }
+
+    public NaturalNumber getNaturalNumber() {
+        return naturalNumber;
+    }
 }
