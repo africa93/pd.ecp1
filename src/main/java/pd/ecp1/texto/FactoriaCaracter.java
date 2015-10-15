@@ -12,10 +12,6 @@ public class FactoriaCaracter {
         map = new HashMap<Character, Caracter>();
     }
 
-    public FactoriaCaracter getInstance() {
-        return factoria;
-    }
-
     public Caracter get(char key) {
         if (map.containsKey(key)) {
             return map.get(key);
