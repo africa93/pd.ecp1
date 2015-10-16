@@ -8,7 +8,6 @@ import java.util.Collection;
 import org.junit.Before;
 import org.junit.Test;
 
-
 public class Visitor2Test {
     private Collection<Element> coleccion = new ArrayList<Element>();
 

@@ -4,8 +4,8 @@ public class NaturalNumberManager {
     private NaturalNumber naturalNumber;
 
     private NaturalNumberCreator creator;
-    
-    public NaturalNumberManager(){
+
+    public NaturalNumberManager() {
         naturalNumber = new NaturalNumberEs(0);
     }
 

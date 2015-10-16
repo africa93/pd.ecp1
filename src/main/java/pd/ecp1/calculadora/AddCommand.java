@@ -4,19 +4,19 @@ import upm.jbb.IO;
 
 public class AddCommand extends Operation {
 
-	public AddCommand(Calculator calculator) {
-		super(calculator);
-	}
+    public AddCommand(Calculator calculator) {
+        super(calculator);
+    }
 
-	@Override
-	public String name() {
-		return "Sumar";
-	}
+    @Override
+    public String name() {
+        return "Sumar";
+    }
 
-	@Override
-	public void execute() {
-		int sumando = IO.getIO().readInt();
-		calculator.add(sumando);
-	}
+    @Override
+    public void execute() {
+        int sumando = IO.getIO().readInt();
+        calculator.add(sumando);
+    }
 
 }

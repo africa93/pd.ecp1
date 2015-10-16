@@ -8,6 +8,5 @@ public class NaturalNumberEs extends NaturalNumber {
         super(value);
         this.setTextValue(textValue);
     }
-    
-    
+
 }

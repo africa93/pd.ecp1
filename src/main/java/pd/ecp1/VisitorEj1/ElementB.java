@@ -1,23 +1,23 @@
 package pd.ecp1.VisitorEj1;
 
 public class ElementB implements Element {
-	private String attributeB;
+    private String attributeB;
 
-	public ElementB() {
-		this.setAttributeB("B");
-	}
+    public ElementB() {
+        this.setAttributeB("B");
+    }
 
-	public String getAttributeB() {
-		return this.attributeB;
-	}
+    public String getAttributeB() {
+        return this.attributeB;
+    }
 
-	public void setAttributeB(String attributeB) {
-		this.attributeB = attributeB;
-	}
+    public void setAttributeB(String attributeB) {
+        this.attributeB = attributeB;
+    }
 
-	@Override
-	public void accept(Visitor v) {
-		v.visitElementB(this);
-	}
+    @Override
+    public void accept(Visitor v) {
+        v.visitElementB(this);
+    }
 
 }

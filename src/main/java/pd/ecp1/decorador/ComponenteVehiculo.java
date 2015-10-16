@@ -3,23 +3,25 @@ package pd.ecp1.decorador;
 import java.util.ArrayList;
 
 public abstract class ComponenteVehiculo {
-	private ArrayList<Extra> extras;
-	protected String descripcion;
-	protected double precio;
+    private ArrayList<Extra> extras;
 
-	public ComponenteVehiculo(String descripcion, double precio) {
-		this.descripcion = descripcion;
-		this.precio = precio;
-		extras = new ArrayList<Extra>();
-	}
+    protected String descripcion;
 
-	public abstract void view();
+    protected double precio;
 
-	public double getPrecio() {
-		return precio;
-	}
+    public ComponenteVehiculo(String descripcion, double precio) {
+        this.descripcion = descripcion;
+        this.precio = precio;
+        extras = new ArrayList<Extra>();
+    }
 
-	public String getDescripcion() {
-		return descripcion;
-	}
+    public abstract void view();
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
 }

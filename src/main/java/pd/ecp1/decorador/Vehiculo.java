@@ -2,22 +2,23 @@ package pd.ecp1.decorador;
 
 public class Vehiculo extends ComponenteVehiculo {
 
-	private String modelo;
-	private String marca;
+    private String modelo;
 
-	public Vehiculo(String descripcion, double precio) {
-		super(descripcion, precio);
-		this.modelo = modelo;
-		this.marca = marca;
-	}
+    private String marca;
 
-	@Override
-	public void view() {
-		System.out.println(modelo + " ");
-	}
+    public Vehiculo(String descripcion, double precio) {
+        super(descripcion, precio);
+        this.modelo = modelo;
+        this.marca = marca;
+    }
 
-	public double getPrecio() {
-		return precio;
-	}
+    @Override
+    public void view() {
+        System.out.println(modelo + " ");
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
 
 }
